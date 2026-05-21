@@ -1,0 +1,196 @@
+/* AuditLogs.css */
+
+.audit-logs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.premium-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.premium-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+  background: linear-gradient(to right, #475569, #0f172a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Actions Bar */
+.actions-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid #f1f5f9;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.8rem;
+  border-radius: 10px;
+  border: 2px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  border-color: #475569;
+  background: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(71, 85, 105, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+.filters-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-select {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #e2e8f0;
+  background: white;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.filter-select:focus { border-color: #475569; }
+
+.btn-export {
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.btn-export:hover { background: #1e293b; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.3); transform: translateY(-1px); }
+
+/* Table Container */
+.premium-table-card {
+  background: white;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  overflow-x: auto;
+}
+
+.premium-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.premium-table th {
+  text-align: left;
+  padding: 1.25rem 1rem;
+  color: #64748b;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.premium-table th:first-child { border-top-left-radius: 12px; }
+.premium-table th:last-child { border-top-right-radius: 12px; }
+
+.premium-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+.premium-table tbody tr { transition: all 0.2s; }
+.premium-table tbody tr:hover { background: #f8fafc; }
+
+/* Badges */
+.role-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: #e2e8f0;
+  color: #475569;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.2rem;
+}
+
+.action-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid transparent;
+}
+
+.action-login { background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe; }
+.action-approve { background: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
+.action-reject { background: #fffbeb; color: #b45309; border-color: #fde68a; }
+.action-delete { background: #fef2f2; color: #b91c1c; border-color: #fecaca; }
+.action-update { background: #f5f3ff; color: #6d28d9; border-color: #ddd6fe; }
+.action-create { background: #fdf4ff; color: #a21caf; border-color: #fae8ff; }
+.action-default { background: #f1f5f9; color: #475569; border-color: #e2e8f0; }
+
+.ip-address {
+  font-family: 'Consolas', 'Monaco', monospace;
+  background: #f1f5f9;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  color: #475569;
+  font-size: 0.8rem;
+}
+
+.timestamp { white-space: nowrap; color: #64748b; font-weight: 600; }
